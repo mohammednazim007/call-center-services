@@ -57,7 +57,7 @@ export const callCenterData = [
         _id: "64f5e1a2b3d7c89ea01b2c46",
         name: "Industry News",
         link: "/blog/news",
-        description: "Get the latest news and trends from our industry. ",
+        description: "Get the latest news and trends from our industry.",
       },
     ],
   },

@@ -32,12 +32,12 @@ const Header = () => {
           </div>
           <div>
             {isOpen ? (
+              <X onClick={() => setIsOpen(false)} />
+            ) : (
               <AlignRight
-                onClick={() => setIsOpen(false)}
+                onClick={() => setIsOpen(true)}
                 className="text-[#009dff]"
               />
-            ) : (
-              <X onClick={() => setIsOpen(true)} />
             )}
           </div>
         </div>
@@ -52,7 +52,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="w-screen h-[calc(100vh-40px)] md:h-[calc(100vh-80px)] fixed top-[4.3rem] md:top-[4.3rem] left-0 bg-[#cce5f6]"
+            className="w-screen h-[calc(100vh-40px)] md:h-[calc(100vh-80px)] fixed top-[4.3rem] md:top-[4.3rem] left-0 bg-[#cce5f6] overflow-y-auto"
           >
             <Menubar />
           </motion.div>

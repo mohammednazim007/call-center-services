@@ -21,9 +21,12 @@ const Menubar: React.FC = () => {
                 {category.items.map((item: CallCenterItem) => (
                   <li
                     key={item._id}
-                    className=" hover:bg-[#d9ecfb] transition-all block capitalize text-[18px] cursor-pointer  rounded-sm py-4 p-3"
+                    className=" hover:bg-[#d9ecfb] transition-all block capitalize text-[18px] cursor-pointer  rounded-sm py-4 p-3 group"
                   >
-                    <a href={item.link} className="text-gray-700 block">
+                    <a
+                      href={item.link}
+                      className="text-gray-700 block group-hover:tracking-wider transition-all"
+                    >
                       {item.name}
                     </a>
                     <a
