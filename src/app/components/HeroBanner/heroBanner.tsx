@@ -38,6 +38,7 @@ import Image from "next/image";
 import rigthImge from "@/app/assets/bg-home-first-image.842b02fa.png";
 import herebannerStyles from "./banner.module.css";
 import bg_image from "@/app/assets/bg-top.cd690b6a.png";
+import DownloadButton from "@/app/shared/download-btn/downloadButton";
 
 const HeroBanner = () => {
   return (
@@ -45,8 +46,9 @@ const HeroBanner = () => {
       className={`${herebannerStyles.heroBanner} h-[100vh] min-w-full flex items-center justify-center -mt-[0rem]`}
       style={{
         backgroundImage: `url(${bg_image.src})`,
-
-        backgroundColor: "#2acbfd",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
       }}
     >
       {/* Container for left and right content */}
@@ -59,6 +61,8 @@ const HeroBanner = () => {
           <span className="text-lg md:text-xl text-[#009dff] font-thin mt-4 block">
             Connect with your loved ones through calls and messages.
           </span>
+
+          <DownloadButton />
         </div>
 
         {/* Right side image content */}
