@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { footerData } from "./data";
 
 const Footer = () => {
@@ -37,9 +38,7 @@ const Footer = () => {
                   <ul className="space-y-1">
                     {item?.items?.map((list, index) => (
                       <li key={index}>
-                        <a rel="noopener noreferrer" href="#">
-                          {list?.name}
-                        </a>
+                        <Link href={list?.slug}>{list?.name}</Link>
                       </li>
                     ))}
                   </ul>
