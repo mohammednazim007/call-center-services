@@ -25,7 +25,7 @@ const Header = () => {
   };
 
   return (
-    <div className={`${Headers.glassBg} fixed w-full top-0 left-0 z-50`}>
+    <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-50`}>
       <div className="container mx-auto flex items-center justify-between px-4 md:px-8 ">
         {/* left brand image */}
         <div>

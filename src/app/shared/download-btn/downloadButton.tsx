@@ -1,10 +1,15 @@
 import Image from "next/image";
 import downloadStyle from "./download.module.css";
 import windows from "@/app/assets/icon-win-btn.0a86f5cb.png";
+import * as motion from "motion/react-client";
 
 const DownloadButton = () => {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0, y: 60 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.1, delay: 0.5 }}
+    >
       <button
         className={`${downloadStyle.downloadBtn} flex items-center gap-x-3`}
       >
@@ -19,7 +24,7 @@ const DownloadButton = () => {
         </span>
         Download for windows
       </button>
-    </div>
+    </motion.div>
   );
 };
 
