@@ -1,59 +1,56 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
+
+import React from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { ArrowRight } from "lucide-react";
-import React from "react";
+import { timelineData } from "./user-review";
 
-// custom types definition for react-vertical-timeline-component
-declare module "react-vertical-timeline-component" {
-  export class VerticalTimeline extends React.Component<any, any> {}
-  export class VerticalTimelineElement extends React.Component<any, any> {}
+// Define the type for timeline data items
+interface TimelineItem {
+  className: string;
+  contentStyle: React.CSSProperties;
+  contentArrowStyle: React.CSSProperties;
+  date: string;
+  iconStyle: React.CSSProperties;
+  icon: React.ReactNode;
+  title: string;
+  subtitle: string;
+  description: string;
+  animate?: boolean;
 }
 
-const HeroVerticalReviews = () => {
+const HeroVerticalReviews: React.FC = () => {
   return (
-    <div>
+    <div className="bg-[#131b21] py-10 md:py-20">
+      <div>
+        <h1 className="text-3xl md:text-5xl font-bold text-center text-[#009dff] py-3 pb-12">
+          What client say{" "}
+        </h1>
+      </div>
       <VerticalTimeline>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(33, 150, 243)" }}
-          date="2011 - present"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<ArrowRight />}
-        >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
-        </VerticalTimelineElement>
-
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          date="2010 - 2011"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<ArrowRight />}
-        >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
-        </VerticalTimelineElement>
-
-        {/* <VerticalTimelineElement
-    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
-    icon={<StarIcon />}
-  /> */}
+        {timelineData.length > 0 &&
+          timelineData.map((item: TimelineItem, index: number) => (
+            <VerticalTimelineElement
+              key={index}
+              className={item.className}
+              contentStyle={item.contentStyle}
+              contentArrowStyle={item.contentArrowStyle}
+              date={item.date}
+              iconStyle={item.iconStyle}
+              icon={item.icon}
+              animate={item.animate}
+            >
+              <h3 className="vertical-timeline-element-title">{item.title}</h3>
+              <h4 className="vertical-timeline-element-subtitle">
+                {item.subtitle}
+              </h4>
+              <p className="">{item.description}</p>
+            </VerticalTimelineElement>
+          ))}
       </VerticalTimeline>
     </div>
   );
