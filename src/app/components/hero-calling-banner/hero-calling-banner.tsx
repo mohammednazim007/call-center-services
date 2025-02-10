@@ -7,7 +7,7 @@ import { AnimatePresence } from "motion/react";
 const HeroCallingBanner = () => {
   return (
     <div
-      className={`min-w-full flex items-center justify-center pt-[10rem] pb-[5rem] md:h-screen bg-[#131b21]`}
+      className={`min-w-full flex items-center justify-center pt-[6rem] pb-[5rem] md:h-screen bg-[#131b21]`}
     >
       {/* Container for left and right content */}
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-4 md:px-8 ">
@@ -30,7 +30,7 @@ const HeroCallingBanner = () => {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-[#009dff]"
+              className="text-6xl md:text-5xl font-bold text-[#009dff]"
             >
               Personal Calling Card
             </motion.h1>
@@ -59,7 +59,7 @@ const HeroCallingBanner = () => {
               width={1000}
               height={1000}
               loading="lazy"
-              className="w-full md:w-auto max-w-[700px] h-auto object-contain"
+              className="w-full md:w-auto md:max-w-[700px] h-auto object-contain"
             />
           </motion.div>
         </AnimatePresence>

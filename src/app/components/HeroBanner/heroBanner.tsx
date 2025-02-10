@@ -14,7 +14,7 @@ import { AnimatePresence } from "motion/react";
 const HeroBanner = () => {
   return (
     <div
-      className={`${heroBannerStyles.heroBanner}  min-w-full flex items-center justify-center pt-[10rem] pb-[5rem] md:h-screen`}
+      className={`${heroBannerStyles.heroBanner}  min-w-full flex items-center justify-center pt-[6rem] pb-[5rem] md:h-screen`}
       style={{
         backgroundImage: `url(${bg_image.src})`,
         backgroundRepeat: "no-repeat",
@@ -31,7 +31,7 @@ const HeroBanner = () => {
               initial={{ opacity: 0, y: 60 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
-              className="text-4xl md:text-5xl font-bold text-[#009dff]"
+              className="text-6xl md:text-5xl font-bold text-[#009dff]"
             >
               Free, Simple, and Secure
             </motion.h1>
