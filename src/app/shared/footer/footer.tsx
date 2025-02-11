@@ -1,26 +1,23 @@
-"use client"; // Ensure it's client-side for scrolling
-import { useRouter, usePathname } from "next/navigation"; // Next.js navigation
+"use client";
+import { useRouter } from "next/navigation";
 import { footerData } from "./data";
-import DownloadButton from "../downlod-button/download-button";
 import Image from "next/image";
 import brandLogo from "@/app/assets/brandLogo.png";
+import DownloadButton from "../downlod-button/download-button";
 
 const Footer = () => {
   const router = useRouter();
-  const pathname = usePathname(); // Get the current route
+  const forceRoute = ["about-us", "policy-terms"];
 
   // Smooth scroll function
   const handleScroll = (slug: string) => {
     const targets = document.getElementById(slug);
 
-    // If on home page, scroll smoothly & if not on home page, redirect to target page
-    if (targets === null && pathname === "/") return router.push(`/${slug}`);
+    if (forceRoute.includes(slug)) return router.push(`/${slug}`);
 
-    if (targets !== null) {
-      router.push(`/`);
-      targets?.scrollIntoView({ behavior: "smooth" });
-    } else {
+    if (!forceRoute.includes(slug)) {
       router.push(`/#${slug}`);
+      targets?.scrollIntoView({ behavior: "smooth" });
     }
   };
 
