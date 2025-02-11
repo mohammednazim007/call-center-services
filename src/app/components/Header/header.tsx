@@ -62,7 +62,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="w-screen h-[calc(100vh-40px)] md:h-[calc(100vh-80px)] fixed top-[4.3rem] md:top-[4.3rem] left-0 bg-[#cce5f6] overflow-y-auto"
+            className="w-full h-[calc(100vh-40px)] md:h-[calc(100vh)] fixed top-[4.3rem] md:top-[4.3rem] left-0 bg-[#cce5f6] overflow-y-auto "
           >
             <Menubar />
           </motion.div>
@@ -77,7 +77,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="w-screen h-[calc(100vh-40px)] md:h-[calc(100vh-80px)] fixed top-[4.3rem] md:top-[4.2rem] left-0 bg-[#cce5f6] overflow-y-auto"
+            className="w-full h-[calc(100vh-40px)] md:h-[calc(100vh)] fixed top-[4.3rem] md:top-[4.2rem] left-0 bg-[#cce5f6] overflow-y-auto"
             style={{
               backgroundImage: `url(${backgroundImage.src})`,
             }}
