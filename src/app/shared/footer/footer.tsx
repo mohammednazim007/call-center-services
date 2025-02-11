@@ -72,10 +72,16 @@ const Footer = () => {
 
   // Smooth scroll function
   const handleScroll = (slug: string) => {
-    if (pathname === "/") {
+    const targets = document.getElementById(slug);
+    if (pathname === "/" && targets === null) return router.push(`/${slug}`);
+
+    if (pathname === "/" && targets !== null) {
       // If on home page, scroll smoothly
+
       document.getElementById(slug)?.scrollIntoView({ behavior: "smooth" });
     } else {
+      console.log(pathname, slug);
+
       // If on another page, navigate to home and pass the target section
       router.push(`/#${slug}`);
     }
