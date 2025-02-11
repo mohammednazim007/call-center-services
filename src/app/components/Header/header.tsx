@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import brandImage from "@/app/assets/imo.30ad61b6.png";
 import Headers from "./header.module.css";
 import { AlignRight, Search, X } from "lucide-react";
 import { useState } from "react";
@@ -9,6 +8,8 @@ import { AnimatePresence } from "motion/react";
 import { motion } from "framer-motion";
 import SearchBar from "@/app/shared/search-bar/search-bar";
 import backgroundImage from "@/app/assets/searchbg.png";
+import brandLogo from "@/app/assets/brandLogo.png";
+import Link from "next/link";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,15 +29,15 @@ const Header = () => {
     <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-50`}>
       <div className="container mx-auto flex items-center justify-between px-4 md:px-8 ">
         {/* left brand image */}
-        <div>
+        <Link href={"/"}>
           <Image
             width={45}
             height={45}
             loading="lazy"
-            src={brandImage}
+            src={brandLogo}
             alt="logo"
           />
-        </div>
+        </Link>
 
         {/* right side content */}
         <div className="flex items-center gap-4">

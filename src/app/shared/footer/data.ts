@@ -12,7 +12,7 @@ export const footerData = [
     category: "Who We Are",
     items: [
       { name: "About Us", slug: "about-us" },
-      { name: "Policy", slug: "policy" },
+      { name: "Policy", slug: "policy-terms" },
     ],
   },
   {
