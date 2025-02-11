@@ -21,7 +21,6 @@ export const footerData = [
       { name: "Feedback", slug: "feedback" },
       { name: "For Business", slug: "for-business" },
       { name: "Media Inquiries", slug: "media-inquiries" },
-      { name: "Other", slug: "other" },
     ],
   },
 ];

@@ -8,12 +8,15 @@ import DownloadButton from "../downlod-button/download-button";
 const Footer = () => {
   const router = useRouter();
   const forceRoute = ["about-us", "policy-terms"];
+  const underMaintenanceRoute = ["feedback", "for-business", "media-inquiries"];
 
   // Smooth scroll function
   const handleScroll = (slug: string) => {
     const targets = document.getElementById(slug);
 
     if (forceRoute.includes(slug)) return router.push(`/${slug}`);
+    if (underMaintenanceRoute.includes(slug))
+      return router.push(`/under-maintenance`);
 
     if (!forceRoute.includes(slug)) {
       router.push(`/#${slug}`);
