@@ -6,10 +6,10 @@ import windows from "@/app/assets/icon-win-blue.3a090cce.png";
 import apple from "@/app/assets/icon-ios-blue.9a8ec9e9.png";
 import mac from "@/app/assets/icon-mac-blue.e9c0aaa1.png";
 import androids from "@/app/assets/icon-android-blue.992186a1.png";
-import DownloadButton from "@/app/shared/download-btn/downloadButton";
 import ImageButton from "@/app/shared/image-button/image-button";
 import * as motion from "motion/react-client";
 import { AnimatePresence } from "motion/react";
+import WindowsDownloadButton from "@/app/shared/windows-download-btn/windows-download-button";
 
 const HeroBanner = () => {
   return (
@@ -39,7 +39,7 @@ const HeroBanner = () => {
               Connect with your loved ones through calls and messages.
             </span>
 
-            <DownloadButton />
+            <WindowsDownloadButton />
 
             {/* == image button == */}
             <div className="flex items-center mt-6 gap-x-2">

@@ -5,6 +5,7 @@ export const footerData = [
       { name: "Audio & Video Call", slug: "audio-video-call" },
       { name: "Security & Privacy", slug: "security-privacy" },
       { name: "Translation", slug: "translation" },
+      { name: "Private policy", slug: "private-policy" },
     ],
   },
   {

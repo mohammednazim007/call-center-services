@@ -8,6 +8,7 @@ const HeroTranslationBanner = () => {
   return (
     <div
       className={`min-w-full flex items-center justify-center pt-[10rem] pb-[5rem] md:h-screen bg-[#c8ebff]`}
+      id="translation"
     >
       {/* Container for left and right content */}
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-7xl px-4 md:px-8 ">
