@@ -24,21 +24,20 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
               {/* Sub-Items List */}
               <ul>
                 {category.items.map((item: CallCenterItem) => (
-                  <li
+                  <Link
                     key={item._id}
-                    className=" hover:bg-[#d9ecfb] transition-all block capitalize text-[18px] cursor-pointer  rounded-sm py-4 p-3 group"
+                    href={`${item.link}`}
+                    className="text-gray-700 block group-hover:tracking-wider transition-all"
+                    onClick={() => toggleMode("closed")} // Close the menu on link click
                   >
-                    <Link
-                      href={`${item.link}`}
-                      className="text-gray-700 block group-hover:tracking-wider transition-all"
-                      onClick={() => toggleMode("closed")} // Close the menu on link click
-                    >
+                    <li className=" hover:bg-[#d9ecfb] transition-all block capitalize text-[18px] cursor-pointer  rounded-sm py-4 p-3 group">
                       {item.name}
-                    </Link>
-                    <span className="text-gray-700 block text-sm line-clamp-1">
-                      {item.description}
-                    </span>
-                  </li>
+
+                      <span className="text-gray-700 block text-sm line-clamp-1">
+                        {item.description}
+                      </span>
+                    </li>
+                  </Link>
                 ))}
               </ul>
             </div>

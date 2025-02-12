@@ -18,26 +18,19 @@ export const callCenterData = [
       {
         _id: "64f5e1a2b3d7c89ea01b2c43",
         name: "Latest Articles",
-        link: "/blog",
+        link: "/under-maintenance", ///blog
         description: "Stay updated with our latest articles and insights.",
       },
       {
         _id: "64f5e1a2b3d7c89ea01b2c44",
         name: "Tutorials",
-        link: "/blog/tutorials",
+        link: "/under-maintenance", ///blog/tutorials
         description: "Follow step-by-step guides to master our tools.",
-      },
-      {
-        _id: "64f5e1a2b3d7c89ea01b2c45",
-        name: "Case Studies",
-        link: "/blog/case-studies",
-        description:
-          "Read real-world examples of how we help businesses succeed.",
       },
       {
         _id: "64f5e1a2b3d7c89ea01b2c46",
         name: "Industry News",
-        link: "/blog/news",
+        link: "/under-maintenance", ///blog/news
         description: "Get the latest news and trends from our industry.",
       },
     ],
@@ -49,7 +42,7 @@ export const callCenterData = [
       {
         _id: "64f5e1a2b3d7c89ea01b2c48",
         name: "Help Center",
-        link: "/support",
+        link: "/help-center",
         description: "Find answers to common questions in our help center.",
       },
       {
