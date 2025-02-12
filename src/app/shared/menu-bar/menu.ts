@@ -5,28 +5,9 @@ export const callCenterData = [
     items: [
       {
         _id: "64f5e1a2b3d7c89ea01b2c3e",
-        name: "Explore",
-        link: "/explore",
-        description: "Discover our platform's features and capabilities.",
-      },
-      {
-        _id: "64f5e1a2b3d7c89ea01b2c3f",
-        name: "About Us",
-        link: "/about",
-        description: "Learn more about our company and mission.",
-      },
-      {
-        _id: "64f5e1a2b3d7c89ea01b2c40",
-        name: "Features",
-        link: "/features",
-        description: "Explore the key features that make us unique.",
-      },
-      {
-        _id: "64f5e1a2b3d7c89ea01b2c41",
-        name: "Pricing",
-        link: "/pricing",
-        description:
-          "Check out our pricing plans and choose the best one for you.",
+        name: "Marketplace",
+        link: "/marketplace",
+        description: "Explore and purchase products from our marketplace.",
       },
     ],
   },

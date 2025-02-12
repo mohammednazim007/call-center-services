@@ -86,7 +86,7 @@ const Header = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="fixed top-[4.3rem] left-0 w-full h-[calc(100vh-40px)] md:h-[100vh] bg-[#cce5f6] overflow-y-auto"
+            className="fixed top-[4.3rem] left-0 w-screen h-[calc(100vh-40px)] md:h-[100vh] bg-[#cce5f6] overflow-y-auto"
             style={{ backgroundImage: `url(${backgroundImage.src})` }}
           >
             <SearchBar />

@@ -2,6 +2,7 @@ import React from "react";
 import { callCenterData } from "./menu";
 import { CallCenterCategory, CallCenterItem } from "./types"; // Import the type
 import menuStyle from "./menu.module.css";
+import Link from "next/link";
 
 const Menubar: React.FC = () => {
   return (
@@ -23,18 +24,15 @@ const Menubar: React.FC = () => {
                     key={item._id}
                     className=" hover:bg-[#d9ecfb] transition-all block capitalize text-[18px] cursor-pointer  rounded-sm py-4 p-3 group"
                   >
-                    <a
-                      href={item.link}
+                    <Link
+                      href={`${item.link}`}
                       className="text-gray-700 block group-hover:tracking-wider transition-all"
                     >
                       {item.name}
-                    </a>
-                    <a
-                      href={item.link}
-                      className="text-gray-700 block text-sm line-clamp-1"
-                    >
+                    </Link>
+                    <span className="text-gray-700 block text-sm line-clamp-1">
                       {item.description}
-                    </a>
+                    </span>
                   </li>
                 ))}
               </ul>

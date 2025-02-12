@@ -1,7 +1,7 @@
 // components/FeaturesList.js
 
 import React from "react";
-import HeroCallingBanner from "../components/hero-calling-banner/hero-calling-banner";
+import HeroCallingBanner from "../../components/hero-calling-banner/hero-calling-banner";
 import * as motion from "motion/react-client";
 
 const FeaturesList = () => {
