@@ -10,6 +10,7 @@ import SearchBar from "@/app/shared/search-bar/search-bar";
 import backgroundImage from "@/app/assets/searchbg.png";
 import brandLogo from "@/app/assets/brandLogo.png";
 import Link from "next/link";
+import DownloadButton from "@/app/shared/downlod-button/download-button";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
 
   return (
     <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-50`}>
-      <div className="container mx-auto flex items-center justify-between px-4 md:px-8 ">
+      <div className="container mx-auto flex items-center justify-between">
         {/* left brand image */}
         <Link href={"/"}>
           <Image
@@ -41,6 +42,9 @@ const Header = () => {
 
         {/* right side content */}
         <div className="flex items-center gap-4">
+          <div>
+            <DownloadButton />
+          </div>
           <div>
             <Search onClick={handleSearch} className="text-[#009dff]" />
           </div>
@@ -63,6 +67,9 @@ const Header = () => {
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="w-full h-[calc(100vh-40px)] md:h-[calc(100vh)] fixed top-[4.3rem] md:top-[4.3rem] left-0 bg-[#cce5f6] overflow-y-auto "
+            style={{
+              backgroundImage: `url(${backgroundImage.src})`,
+            }}
           >
             <Menubar />
           </motion.div>
