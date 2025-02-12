@@ -5,7 +5,7 @@ import * as motion from "motion/react-client";
 
 const ClientChatBanner = () => {
   return (
-    <div className="bg-[#c8ebff] py-10 md:py-16">
+    <div className="bg-[#009dff] py-10 md:py-16">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}

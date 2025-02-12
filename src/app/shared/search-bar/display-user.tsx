@@ -8,37 +8,20 @@ const DisplayUser: React.FC<{ user: User }> = ({ user }) => {
     <div className="">
       <div
         key={user.id}
-        className="container max-w-3xl px-10 py-6 mx-auto rounded-lg shadow-sm bg-gray-50"
+        className="container max-w-3xl px-10 py-3 mx-auto rounded-lg shadow-sm bg-gray-50"
       >
-        <div className="flex items-center justify-between">
-          <Link
-            href="/category/javascript" // Example route for category
-            className=""
-          >
-            {user.profession}
-          </Link>
+        <span className="text-[#009dff]">{user.profession}</span>
+
+        <div className="mt-1">
+          <span className="text-xl font-bold text-slate-600">{user.name}</span>
+          <p className="mt-1">{user.description}</p>
         </div>
-        <div className="mt-3">
-          <Link
-            href={`/user/${user.id}`} // Dynamic route for user details
-            className="text-2xl font-bold hover:underline"
-          >
-            {user.name}
-          </Link>
-          <p className="mt-2">{user.description}</p>
-        </div>
-        <div className="flex items-center justify-between mt-4">
-          <Link
-            href={`/user/${user.id}`} // Dynamic route for user details
-            className="hover:underline text-violet-600"
-          >
+        <div className="flex items-center justify-between mt-1">
+          <Link href={"#"} className="hover:underline text-violet-600">
             Read more
           </Link>
           <div>
-            <Link
-              href={`/user/${user.id}`} // Dynamic route for user details
-              className="flex items-center"
-            >
+            <span className="flex items-center">
               <Image
                 width={100}
                 height={100}
@@ -48,7 +31,7 @@ const DisplayUser: React.FC<{ user: User }> = ({ user }) => {
                 className="object-cover w-10 h-10 mx-4 rounded-full bg-gray-500"
               />
               <span className="hover:underline text-gray-600">{user.name}</span>
-            </Link>
+            </span>
           </div>
         </div>
       </div>

@@ -9,7 +9,7 @@ import {
 export const timelineData = [
   {
     className: "vertical-timeline-element--review",
-    contentStyle: { background: "#4A90E2", color: "#ffffff" }, // imo's primary blue color
+    contentStyle: { background: "#4A90E2", color: "#ffffff" }, // Konva's primary blue color
     contentArrowStyle: { borderRight: "7px solid #4A90E2" },
     date: "Reviewed on Feb 10, 2025",
     iconStyle: { background: "#4A90E2", color: "#ffffff" },
@@ -17,7 +17,7 @@ export const timelineData = [
     title: "High-Quality Video Calls",
     subtitle: "Emily R. - Remote Worker",
     description:
-      "imo offers clear and stable video calls, making it easy to stay connected with my team across different countries. The quality remains consistent even with varying internet speeds.",
+      "Konva offers clear and stable video calls, making it easy to stay connected with my team across different countries. The quality remains consistent even with varying internet speeds.",
     animate: true,
   },
   {
@@ -43,7 +43,7 @@ export const timelineData = [
     title: "Enhanced Privacy Features",
     subtitle: "Sophia M. - Privacy Advocate",
     description:
-      "I appreciate imo's commitment to privacy with features like end-to-end encryption and disappearing messages. It gives me confidence that my conversations are secure.",
+      "I appreciate Konva's commitment to privacy with features like end-to-end encryption and disappearing messages. It gives me confidence that my conversations are secure.",
     animate: true,
   },
   {
@@ -69,7 +69,7 @@ export const timelineData = [
     title: "Efficient Performance",
     subtitle: "Olivia W. - Tech Enthusiast",
     description:
-      "imo runs smoothly on my device without draining the battery. It's optimized well, ensuring that I can use it throughout the day without concerns.",
+      "Konva runs smoothly on my device without draining the battery. It's optimized well, ensuring that I can use it throughout the day without concerns.",
     animate: true,
   },
 ];
