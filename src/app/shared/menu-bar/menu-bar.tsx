@@ -4,7 +4,11 @@ import { CallCenterCategory, CallCenterItem } from "./types"; // Import the type
 import menuStyle from "./menu.module.css";
 import Link from "next/link";
 
-const Menubar: React.FC = () => {
+interface MenubarProps {
+  toggleMode: (mode: "closed" | "menu" | "search") => void; // Add the toggleMode prop
+}
+
+const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
   return (
     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
       {/* Responsive Grid for Menu Items */}
@@ -27,6 +31,7 @@ const Menubar: React.FC = () => {
                     <Link
                       href={`${item.link}`}
                       className="text-gray-700 block group-hover:tracking-wider transition-all"
+                      onClick={() => toggleMode("closed")} // Close the menu on link click
                     >
                       {item.name}
                     </Link>

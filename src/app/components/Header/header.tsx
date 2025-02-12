@@ -73,7 +73,7 @@ const Header = () => {
             className="fixed top-[4.3rem] left-0 w-full h-[calc(100vh-40px)] md:h-[100vh] bg-[#cce5f6] overflow-y-auto"
             style={{ backgroundImage: `url(${backgroundImage.src})` }}
           >
-            <Menubar />
+            <Menubar toggleMode={toggleMode} />
           </motion.div>
         )}
       </AnimatePresence>
