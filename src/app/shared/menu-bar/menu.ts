@@ -9,6 +9,13 @@ export const callCenterData = [
         link: "/marketplace",
         description: "Explore and purchase products from our marketplace.",
       },
+      {
+        _id: "64f5e1a2b3d7c89ea01b2c4b",
+        name: "Live Chat",
+        link: "/support/chat",
+        description:
+          "Chat with our support agents in real-time for instant help.",
+      },
     ],
   },
   {
@@ -57,13 +64,6 @@ export const callCenterData = [
         link: "/support/contact",
         description:
           "Reach out to our support team for personalized assistance.",
-      },
-      {
-        _id: "64f5e1a2b3d7c89ea01b2c4b",
-        name: "Live Chat",
-        link: "/support/chat",
-        description:
-          "Chat with our support agents in real-time for instant help.",
       },
     ],
   },
