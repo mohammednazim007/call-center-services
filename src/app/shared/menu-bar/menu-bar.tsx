@@ -1,6 +1,6 @@
 import React from "react";
 import { callCenterData } from "./menu";
-import { CallCenterCategory, CallCenterItem } from "./types"; // Import the type
+import { CallCenterCategory, CallCenterItem } from "./types"; // Import the types
 import menuStyle from "./menu.module.css";
 import Link from "next/link";
 
@@ -15,7 +15,7 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
       <div className={menuStyle.customGrid}>
         {callCenterData.length > 0 &&
           callCenterData.map((category: CallCenterCategory) => (
-            <div key={category._id} className="p-4 shadow-sm ">
+            <div key={category._id} className="p-4 shadow-sm">
               {/* Category Name */}
               <strong className="text-gray-700 text-xl mb-2 block capitalize">
                 {category.category}
@@ -30,12 +30,18 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
                     className="text-gray-700 block group-hover:tracking-wider transition-all"
                     onClick={() => toggleMode("closed")} // Close the menu on link click
                   >
-                    <li className=" hover:bg-[#d9ecfb] transition-all block capitalize text-[18px] cursor-pointer  rounded-sm py-4 p-3 group">
-                      {item.name}
-
-                      <span className="text-gray-700 block text-sm line-clamp-1">
-                        {item.description}
-                      </span>
+                    <li className="hover:bg-[#d9ecfb] transition-all capitalize text-[18px] cursor-pointer rounded-sm py-4 p-3 group flex gap-2">
+                      <item.icon
+                        className="mt-[5px]"
+                        color={item.iconColor}
+                        size={30}
+                      />{" "}
+                      <div>
+                        {item.name}
+                        <span className="text-gray-700 block text-sm line-clamp-1">
+                          {item.description}
+                        </span>
+                      </div>
                     </li>
                   </Link>
                 ))}
