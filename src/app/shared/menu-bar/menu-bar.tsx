@@ -10,12 +10,12 @@ interface MenubarProps {
 
 const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
   return (
-    <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="container mx-auto px-4 lg:px-8">
       {/* Responsive Grid for Menu Items */}
       <div className={menuStyle.customGrid}>
         {callCenterData.length > 0 &&
           callCenterData.map((category: CallCenterCategory) => (
-            <div key={category._id} className="p-4 shadow-sm">
+            <div key={category._id} className="pt-4">
               {/* Category Name */}
               <strong className="text-gray-700 text-xl mb-2 block capitalize">
                 {category.category}
@@ -34,7 +34,7 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
                       <item.icon
                         className="mt-[5px]"
                         color={item.iconColor}
-                        size={30}
+                        size={35}
                       />{" "}
                       <div>
                         {item.name}
@@ -48,6 +48,11 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
               </ul>
             </div>
           ))}
+
+        {/* add single item */}
+        <li>
+          <h1>market</h1>
+        </li>
       </div>
     </div>
   );
