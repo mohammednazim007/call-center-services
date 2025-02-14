@@ -31,14 +31,16 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
                     className="text-gray-700 block group-hover:tracking-wider transition-all"
                     onClick={() => toggleMode("closed")} // Close the menu on link click
                   >
-                    <li className="hover:bg-[#d9ecfb] transition-all capitalize text-[18px] cursor-pointer rounded-sm py-4 p-3 group flex gap-2">
+                    <li className="hover:bg-[#d9ecfb] transition-all capitalize text-[18px] cursor-pointer rounded-sm py-4 p-3 group flex gap-2 ">
                       <item.icon
                         className="mt-[5px]"
                         color={item.iconColor}
                         size={35}
                       />{" "}
                       <div>
-                        {item.name}
+                        <span className="group-hover:tracking-wider transition-all">
+                          {item.name}
+                        </span>
                         <span className="text-gray-700 block text-sm line-clamp-1">
                           {item.description}
                         </span>
