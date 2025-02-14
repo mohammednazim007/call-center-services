@@ -3,6 +3,7 @@ import { callCenterData } from "./menu";
 import { CallCenterCategory, CallCenterItem } from "./types"; // Import the types
 import menuStyle from "./menu.module.css";
 import Link from "next/link";
+import NavSlider from "../nav-slider/nav-slider";
 
 interface MenubarProps {
   toggleMode: (mode: "closed" | "menu" | "search") => void; // Add the toggleMode prop
@@ -50,9 +51,14 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
           ))}
 
         {/* add single item */}
-        <li>
-          <h1>market</h1>
-        </li>
+        <div>
+          <strong className="text-gray-700 text-xl mb-2 block capitalize pt-4">
+            Tutorials
+          </strong>
+          <div className="py-4">
+            <NavSlider />
+          </div>
+        </div>
       </div>
     </div>
   );
