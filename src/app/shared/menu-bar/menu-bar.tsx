@@ -50,7 +50,7 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
             </div>
           ))}
 
-        {/* add single item */}
+        {/* === add slider for navbar side === */}
         <div>
           <strong className="text-gray-700 text-xl mb-2 block capitalize pt-4">
             Tutorials
