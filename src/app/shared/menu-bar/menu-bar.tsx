@@ -1,13 +1,9 @@
 import React from "react";
 import { callCenterData } from "./menu";
-import { CallCenterCategory, CallCenterItem } from "./types"; // Import the types
+import { CallCenterCategory, CallCenterItem, MenubarProps } from "./types"; // Import the types
 import menuStyle from "./menu.module.css";
 import Link from "next/link";
 import NavSlider from "../nav-slider/nav-slider";
-
-interface MenubarProps {
-  toggleMode: (mode: "closed" | "menu" | "search") => void; // Add the toggleMode prop
-}
 
 const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
   return (
@@ -18,7 +14,10 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
           callCenterData.map((category: CallCenterCategory) => (
             <div key={category._id} className="pt-4">
               {/* Category Name */}
-              <strong className="text-gray-700 text-xl mb-2 block capitalize">
+              <strong
+                data-tour-element={category?.category}
+                className="text-gray-700 text-xl mb-2 block capitalize"
+              >
                 {category.category}
               </strong>
 
@@ -54,7 +53,10 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
 
         {/* === add slider for navbar side === */}
         <div>
-          <strong className="text-gray-700 text-xl mb-2 block capitalize pt-4">
+          <strong
+            data-tour-element="tutorials"
+            className="text-gray-700 text-xl mb-2 block capitalize mt-4"
+          >
             Tutorials
           </strong>
           <div className="py-4">

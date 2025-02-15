@@ -3,6 +3,7 @@ import "./globals.css";
 import { Manrope } from "next/font/google"; // Use a valid font like Manrope
 import Header from "./components/Header/header";
 import Footer from "./shared/footer/footer";
+import ToutProvider from "./shared/reactour/tout-provider/tour-provider";
 
 export const metadata: Metadata = {
   title: "call center",
@@ -22,9 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth ">
       <body className={`${manrope.variable} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <ToutProvider>
+          <Header />
+          {children}
+          <Footer />
+        </ToutProvider>
       </body>
     </html>
   );

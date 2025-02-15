@@ -18,3 +18,7 @@ export interface CallCenterCategory {
   color: string; // Color for the category icon or highlight
   items: CallCenterItem[]; // Array of items within the category
 }
+
+export interface MenubarProps {
+  toggleMode: (mode: "closed" | "menu" | "search") => void; // Add the toggleMode prop
+}

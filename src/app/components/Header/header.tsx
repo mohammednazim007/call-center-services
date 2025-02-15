@@ -10,7 +10,7 @@ import backgroundImage from "@/app/assets/searchbg.png";
 import brandLogo from "@/app/assets/brandLogo.png";
 import Link from "next/link";
 import DownloadButton from "@/app/shared/downlod-button/download-button";
-import TourButton from "@/app/shared/tour-button/tour-button";
+import TourButton from "@/app/shared/reactour/tour-button/tour-button";
 
 type Mode = "closed" | "menu" | "search";
 
@@ -48,7 +48,7 @@ const Header = () => {
           <DownloadButton />
 
           {/* tour button */}
-          <TourButton />
+          <TourButton toggleMode={toggleMode} />
 
           {/* search button */}
           <Search
