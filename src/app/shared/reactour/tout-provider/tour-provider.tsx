@@ -27,7 +27,7 @@ const ToutProvider = ({ children }: { children: React.ReactNode }) => {
       selector: `[data-tour-element="tutorials"]`,
       content: (
         <div>
-          <h4>📚 Tutorials</h4>
+          <h4 className="mb-1">📚 Tutorials</h4>
           <p>Learn how to use the platform with step-by-step guides.</p>
         </div>
       ),
@@ -36,7 +36,7 @@ const ToutProvider = ({ children }: { children: React.ReactNode }) => {
       selector: `[data-tour-element="support"]`,
       content: (
         <div>
-          <h4>🛠️ Support</h4>
+          <h4 className="mb-1">🛠️ Support</h4>
           <p>Need help? Find FAQs, guides, and contact support here.</p>
         </div>
       ),
