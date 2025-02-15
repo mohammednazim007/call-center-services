@@ -36,7 +36,7 @@ const Menubar: React.FC<MenubarProps> = ({ toggleMode }) => {
                         className="mt-[5px]"
                         color={item.iconColor}
                         size={35}
-                      />{" "}
+                      />
                       <div>
                         <span className="group-hover:tracking-wider transition-all">
                           {item.name}
