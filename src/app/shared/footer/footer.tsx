@@ -4,6 +4,7 @@ import { footerData } from "./data";
 import Image from "next/image";
 import brandLogo from "@/app/assets/brandLogo.png";
 import DownloadButton from "../downlod-button/download-button";
+import { ChevronRight } from "lucide-react";
 
 const Footer = () => {
   const router = useRouter();
@@ -66,8 +67,9 @@ const Footer = () => {
                     <li key={index}>
                       <button
                         onClick={() => handleScroll(list.slug)}
-                        className="text-blue-500 hover:underline"
+                        className="text-blue-500 hover:underline flex items-center gap-1 "
                       >
+                        <ChevronRight className="font-thin" size={15} />
                         {list.name}
                       </button>
                     </li>
