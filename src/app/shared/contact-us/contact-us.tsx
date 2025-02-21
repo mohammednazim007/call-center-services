@@ -44,7 +44,7 @@ const ContactUs = () => {
             height={1000}
             alt="contact us"
             loading="lazy"
-            className="hidden md:block"
+            className="hidden md:block animate-pulse"
           />
         </div>
 
@@ -126,7 +126,7 @@ const ContactUs = () => {
                 {...register("message", {
                   required: "Message is required",
                   minLength: {
-                    value: 10,
+                    value: 18,
                     message: "Message must be at least 10 characters",
                   },
                 })}
@@ -135,7 +135,7 @@ const ContactUs = () => {
                   errors.message ? "border-red-500" : ""
                 }`}
                 placeholder="Enter your message"
-                rows={4}
+                rows={6}
               />
               {errors.message && (
                 <p className="text-red-500 text-xs italic mt-1">
