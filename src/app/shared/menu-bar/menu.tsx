@@ -96,7 +96,7 @@ export const callCenterData: CallCenterCategory[] = [
       {
         _id: "64f5e1a2b3d7c89ea01b2c4a",
         name: "Contact Us",
-        link: "/support/contact",
+        link: "/contact-us",
         icon: Mail,
         iconColor: "#2196F3", // Set the color of the icon
         description:
