@@ -4,7 +4,7 @@ import { Manrope } from "next/font/google"; // Use a valid font like Manrope
 import Header from "./components/Header/header";
 import Footer from "./shared/footer/footer";
 import ToutProvider from "./shared/reactour/tout-provider/tour-provider";
-import CanvasCursor from "./shared/useCanvasCursor/CanvasCursor";
+import FollowCursor from "./shared/follow-cursor/follow-cursor";
 
 export const metadata: Metadata = {
   title: "call center",
@@ -28,7 +28,7 @@ export default function RootLayout({
           <Header />
           {children}
           <Footer />
-          <CanvasCursor />
+          <FollowCursor />
         </ToutProvider>
       </body>
     </html>
