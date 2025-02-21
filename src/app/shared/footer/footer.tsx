@@ -65,13 +65,13 @@ const Footer = () => {
                 <ul className="space-y-1">
                   {item?.items?.map((list, index) => (
                     <li key={index}>
-                      <button
+                      <div
                         onClick={() => handleScroll(list.slug)}
-                        className="text-blue-500 hover:underline flex items-center gap-1 "
+                        className="text-blue-500 hover:underline flex items-center gap-1 cursor-pointer"
                       >
                         <ChevronRight className="font-thin" size={15} />
                         {list.name}
-                      </button>
+                      </div>
                     </li>
                   ))}
                 </ul>

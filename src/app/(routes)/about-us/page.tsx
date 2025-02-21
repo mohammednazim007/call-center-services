@@ -1,6 +1,6 @@
 import React from "react";
-import HeroVideoBanner from "../components/hero-video-banner/hero-video-banner";
 import * as motion from "motion/react-client";
+import HeroVideoBanner from "@/app/components/hero-video-banner/hero-video-banner";
 
 const policies = [
   {
