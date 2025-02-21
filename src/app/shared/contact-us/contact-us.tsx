@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useForm, SubmitHandler } from "react-hook-form";
 import contactUsImage from "@/app/assets/contact-image.jpg";
+import { motion } from "framer-motion";
 
 // Define the type for the form data
 type FormData = {
@@ -23,13 +24,16 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24">
+    <motion.div
+      initial={{ opacity: 0, y: 7 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.4, delay: 0.4 }}
+      className="bg-white py-16 px-4 sm:px-6 lg:px-8 lg:py-24"
+    >
       <div className="container md:px-[8rem] min-h-screen flex flex-col lg:flex-row justify-evenly gap-8">
         {/* Left side content */}
         <div className="w-full">
-          <h1 className="text-3xl md:text-5xl font-bold mb-4">
-            Hello there 👋
-          </h1>
+          <h1 className="text-5xl font-bold mb-4">Hello there 👋</h1>
           <p className="mb-1 text-xl font-thin">
             Interested in working together? Fill in the form below to get
             started.
@@ -48,7 +52,7 @@ const ContactUs = () => {
         <div className="w-full">
           <form onSubmit={handleSubmit(onSubmit)}>
             <div>
-              <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              <h1 className="text-5xl font-bold mb-4">
                 Thank you for reaching out to us.
               </h1>
             </div>
@@ -146,13 +150,13 @@ const ContactUs = () => {
                 type="submit"
                 className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
               >
-                Submit
+                Contact Us
               </button>
             </div>
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
