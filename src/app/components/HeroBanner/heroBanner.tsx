@@ -28,7 +28,7 @@ const HeroBanner = () => {
         <AnimatePresence>
           <div className="mb-8 md:mb-0 md:w-1/3">
             <motion.h1
-              initial={{ opacity: 0, y: 60 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               className="text-6xl md:text-5xl font-bold text-[#009dff]"
@@ -57,7 +57,7 @@ const HeroBanner = () => {
         {/* Right side image content */}
         <AnimatePresence>
           <motion.div
-            initial={{ opacity: 0, y: 23 }}
+            initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="w-full md:w-auto mt-[4rem] md:mt-[0rem]"
