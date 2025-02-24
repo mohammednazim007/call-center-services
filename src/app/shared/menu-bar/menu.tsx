@@ -48,7 +48,7 @@ export const callCenterData: CallCenterCategory[] = [
       {
         _id: "64f5e1a2b3d7c89ea01b2c43",
         name: "Latest Articles",
-        link: "/under-maintenance",
+        link: "/latest-articles",
         icon: Newspaper,
         iconColor: "#4CAF50", // Set the color of the icon
         description: "Stay updated with our latest articles and insights.",
