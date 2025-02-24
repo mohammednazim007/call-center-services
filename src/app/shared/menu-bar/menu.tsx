@@ -1,11 +1,11 @@
 import {
   Compass,
   ShoppingCart,
-  MessageCircle,
+  // MessageCircle,
   BookOpen,
   Newspaper,
   GraduationCap,
-  TrendingUp,
+  // TrendingUp,
   LifeBuoy,
   HelpCircle,
   ListChecks,
@@ -28,15 +28,15 @@ export const callCenterData: CallCenterCategory[] = [
         iconColor: "#FF6B6B", // Set the color of the icon
         description: "Explore and purchase products from our marketplace.",
       },
-      {
-        _id: "64f5e1a2b3d7c89ea01b2c4b",
-        name: "Live Chat",
-        link: "/support/chat",
-        icon: MessageCircle,
-        iconColor: "#FF6B6B", // Set the color of the icon
-        description:
-          "Chat with our support agents in real-time for instant help.",
-      },
+      // {
+      //   _id: "64f5e1a2b3d7c89ea01b2c4b",
+      //   name: "Live Chat",
+      //   link: "/support/chat",
+      //   icon: MessageCircle,
+      //   iconColor: "#FF6B6B", // Set the color of the icon
+      //   description:
+      //     "Chat with our support agents in real-time for instant help.",
+      // },
     ],
   },
   {
@@ -61,14 +61,14 @@ export const callCenterData: CallCenterCategory[] = [
         iconColor: "#4CAF50", // Set the color of the icon
         description: "Follow step-by-step guides to master our tools.",
       },
-      {
-        _id: "64f5e1a2b3d7c89ea01b2c46",
-        name: "Industry News",
-        link: "/under-maintenance",
-        icon: TrendingUp,
-        iconColor: "#4CAF50", // Set the color of the icon
-        description: "Get the latest news and trends from our industry.",
-      },
+      // {
+      //   _id: "64f5e1a2b3d7c89ea01b2c46",
+      //   name: "Industry News",
+      //   link: "/under-maintenance",
+      //   icon: TrendingUp,
+      //   iconColor: "#4CAF50", // Set the color of the icon
+      //   description: "Get the latest news and trends from our industry.",
+      // },
     ],
   },
   {
