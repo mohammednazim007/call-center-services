@@ -51,13 +51,14 @@ const Header = () => {
 
   return (
     <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-10 `}>
+      {/* scrollbar */}
       <div
         className="absolute bottom-0 left-0 h-[3px] bg-[#009dff]"
         style={{
           width: `${scrollProgress}%`,
           transition: "width 0.2s ease-out", // Smooth width change
         }}
-      ></div>
+      />
 
       <div className="container mx-auto flex items-center justify-between">
         {/* Left: Brand Image */}
