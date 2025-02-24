@@ -11,7 +11,7 @@ const FAQItem: React.FC<{ faq: FAQ }> = ({ faq }) => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.3 }}
-      className="border-b border-gray-300 py-4 cursor-pointer"
+      className="py-4 cursor-pointer "
     >
       <button
         className="w-full text-left flex justify-between items-center p-4 bg-gray-100 rounded-lg hover:bg-gray-200 transition-all duration-300"
@@ -56,7 +56,7 @@ const FAQSection: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="max-w-3xl mx-auto p-6 bg-white shadow-xl rounded-xl"
+      className="max-w-3xl mx-auto m-14 p-4 bg-white shadow-xl rounded-xl"
     >
       <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
         Frequently Asked Questions
