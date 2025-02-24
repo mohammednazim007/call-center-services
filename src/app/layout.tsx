@@ -22,8 +22,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth ">
-      <body className={`${manrope.variable} antialiased`}>
+    <html lang="en" className="scroll-smooth no-scrollbar ">
+      <body className={`${manrope.variable} `}>
         <ToutProvider>
           <Header />
           {children}

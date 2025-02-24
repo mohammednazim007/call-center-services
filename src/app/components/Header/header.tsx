@@ -16,11 +16,32 @@ type Mode = "closed" | "menu" | "search";
 
 const Header = () => {
   const [mode, setMode] = useState<Mode>("closed");
+  const [scrollProgress, setScrollProgress] = useState(0);
 
+  // smooth scroll progress bar
+  useEffect(() => {
+    if (window === undefined) return;
+
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const scrollHeight =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / scrollHeight) * 100;
+      setScrollProgress(progress);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  // smooth scroll to top
   const toggleMode = (newMode: Mode) => {
     setMode((prev) => (prev === newMode ? "closed" : newMode));
   };
 
+  // Disable body scroll when the menu is open
   useEffect(() => {
     document.body.style.overflow = mode !== "closed" ? "hidden" : "auto";
     return () => {
@@ -29,7 +50,15 @@ const Header = () => {
   }, [mode]);
 
   return (
-    <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-10`}>
+    <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-10 `}>
+      <div
+        className="absolute bottom-0 left-0 h-[3px] bg-[#009dff]"
+        style={{
+          width: `${scrollProgress}%`,
+          transition: "width 0.2s ease-out", // Smooth width change
+        }}
+      ></div>
+
       <div className="container mx-auto flex items-center justify-between">
         {/* Left: Brand Image */}
         <Link href="/">
