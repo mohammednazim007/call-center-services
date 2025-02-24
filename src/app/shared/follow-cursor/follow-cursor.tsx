@@ -1,12 +1,11 @@
 "use client";
-
 import React, { useEffect } from "react";
 
 interface FollowCursorProps {
   color?: string;
 }
 
-const FollowCursor: React.FC<FollowCursorProps> = ({ color = "#323232a6" }) => {
+const FollowCursor: React.FC<FollowCursorProps> = ({ color = "#E53888" }) => {
   useEffect(() => {
     let canvas: HTMLCanvasElement;
     let context: CanvasRenderingContext2D | null;

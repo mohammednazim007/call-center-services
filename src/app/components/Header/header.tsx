@@ -29,7 +29,7 @@ const Header = () => {
   }, [mode]);
 
   return (
-    <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-50`}>
+    <div className={`${Headers.glassBg} sticky w-full top-0 left-0 z-10`}>
       <div className="container mx-auto flex items-center justify-between">
         {/* Left: Brand Image */}
         <Link href="/">

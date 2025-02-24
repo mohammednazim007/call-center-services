@@ -88,7 +88,7 @@ export const callCenterData: CallCenterCategory[] = [
       {
         _id: "64f5e1a2b3d7c89ea01b2c49",
         name: "FAQs",
-        link: "/support/faqs",
+        link: "/support-faq-answer",
         icon: ListChecks,
         iconColor: "#2196F3", // Set the color of the icon
         description: "Browse frequently asked questions and their solutions.",
