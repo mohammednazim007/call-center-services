@@ -32,6 +32,24 @@ const articles: Article[] = [
     summary:
       "Knovo’s latest updates focus on AI-driven messaging, interactive stickers, and new themes, setting a new benchmark in social communication.",
   },
+  {
+    title: "Knovo Introduces AI Chatbots for Smarter Conversations",
+    date: "February 5, 2025",
+    summary:
+      "AI-powered chatbots are now integrated into Knovo Messenger, helping users automate responses, translate messages, and provide instant support.",
+  },
+  {
+    title: "Dark Mode: A Sleek New Look for Knovo Users",
+    date: "January 28, 2025",
+    summary:
+      "Knovo introduces a new dark mode feature, allowing users to enjoy a stylish and comfortable chatting experience even in low-light environments.",
+  },
+  {
+    title: "Voice Notes Get an Upgrade with AI-Powered Transcription",
+    date: "January 20, 2025",
+    summary:
+      "Users can now convert voice notes into text instantly with Knovo’s new AI-powered transcription feature, making conversations more accessible than ever.",
+  },
 ];
 
 const ArticlesSection: React.FC = () => {
@@ -40,12 +58,12 @@ const ArticlesSection: React.FC = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="max-w-4xl mx-auto py-10"
+      className="container py-10"
     >
       <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
         Latest Articles
       </h2>
-      <div className="grid gap-6 md:grid-cols-2 p-6 bg-gray-50 rounded-xl">
+      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 p-6 bg-gray-50 rounded-xl">
         {articles?.map((article, index) => (
           <ArticleCard key={index} article={article} />
         ))}
