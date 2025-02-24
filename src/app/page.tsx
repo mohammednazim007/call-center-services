@@ -7,7 +7,10 @@ import HeroVerticalReviews from "./components/hero-vertical-review/hero-vertical
 import HeroVideoBanner from "./components/hero-video-banner/hero-video-banner";
 import HeroBanner from "./components/HeroBanner/heroBanner";
 
-export default function Home() {
+export default async function Home() {
+  await setTimeout(() => {
+    console.log("Home page loaded");
+  }, 5000);
   return (
     <div className="">
       <HeroBanner />
