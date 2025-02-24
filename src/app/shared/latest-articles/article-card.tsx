@@ -3,8 +3,8 @@ import { Article } from "./latest-articles";
 const ArticleCard: React.FC<{ article: Article }> = ({ article }) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
       className="group relative bg-white/80 backdrop-blur-sm rounded-lg p-8 border border-gray-200 hover:shadow-2xl transition-all duration-300 overflow-hidden hover:bg-gradient-to-br hover:from-white hover:to-blue-50 hover:backdrop-blur-md"
     >
