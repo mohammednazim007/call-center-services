@@ -18,6 +18,11 @@ const Header = () => {
   const [mode, setMode] = useState<Mode>("closed");
   const [scrollProgress, setScrollProgress] = useState(0);
 
+  // smooth scroll to top
+  const toggleMode = (newMode: Mode) => {
+    setMode((prev) => (prev === newMode ? "closed" : newMode));
+  };
+
   // smooth scroll progress bar
   useEffect(() => {
     if (window === undefined) return;
@@ -35,11 +40,6 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  // smooth scroll to top
-  const toggleMode = (newMode: Mode) => {
-    setMode((prev) => (prev === newMode ? "closed" : newMode));
-  };
 
   // Disable body scroll when the menu is open
   useEffect(() => {

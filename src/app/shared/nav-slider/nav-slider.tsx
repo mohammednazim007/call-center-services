@@ -45,6 +45,7 @@ const NavSlider = () => {
         },
       },
     ],
+    arrows: false,
   };
   return (
     <div className="slider-container">
