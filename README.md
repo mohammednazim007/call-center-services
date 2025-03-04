@@ -1,8 +1,8 @@
-# Call Center Next
+# Calling app marketing template.
 
 ## Overview
 
-Call Center Next is a modern, efficient, and user-friendly call center application designed to streamline communication and enhance productivity. It offers a range of features including high-quality video calls, user-friendly messaging, enhanced privacy, manageable notifications, and efficient performance.
+Call Center Konvo is a modern, efficient, and user-friendly calling application designed to streamline communication and enhance productivity. It offers a range of features including high-quality video calls, user-friendly messaging, enhanced privacy, manageable notifications, and efficient performance.
 
 ## Features
 
@@ -25,10 +25,9 @@ To install and run the project locally, follow these steps:
    cd <projectName>
    ```
 3. Install dependencies:
-   ````bash
+   ```bash
    yarn install
-    ```
-   ````
+   ```
 4. Start the development server:
    ```bash
    yarn run dev
