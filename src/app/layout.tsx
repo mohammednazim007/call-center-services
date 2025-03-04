@@ -7,7 +7,7 @@ import ToutProvider from "./shared/reactour/tout-provider/tour-provider";
 import FollowCursor from "./shared/follow-cursor/follow-cursor";
 
 export const metadata: Metadata = {
-  title: "call center",
+  title: "calling app marketing",
   description: "call center, grow your business",
 };
 
