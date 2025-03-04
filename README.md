@@ -22,12 +22,13 @@ To install and run the project locally, follow these steps:
    ```
 2. Navigate to the project directory:
    ```bash
-   cd call-center-next
+   cd <projectName>
    ```
 3. Install dependencies:
-   `bash
-yarn install
-    `
+   ````bash
+   yarn install
+    ```
+   ````
 4. Start the development server:
    ```bash
    yarn run dev
