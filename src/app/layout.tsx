@@ -5,6 +5,7 @@ import Header from "./components/Header/header";
 import Footer from "./shared/footer/footer";
 import ToutProvider from "./shared/reactour/tout-provider/tour-provider";
 import FollowCursor from "./shared/follow-cursor/follow-cursor";
+import { Toaster } from "react-hot-toast";
 
 export const metadata: Metadata = {
   title: "calling app marketing",
@@ -29,6 +30,7 @@ export default function RootLayout({
           {children}
           <Footer />
           <FollowCursor />
+          <Toaster position="top-center" reverseOrder={false} />
         </ToutProvider>
       </body>
     </html>
