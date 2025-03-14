@@ -12,6 +12,7 @@
     "@reactour/tour": "^3.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^12.4.7",
+    "lenis": "^1.2.3",
     "lucide-react": "^0.475.0",
     "motion": "^12.4.1",
     "next": "15.1.6",
