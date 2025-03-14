@@ -12,6 +12,7 @@ const TourButton: React.FC<MenubarProps> = ({ toggleMode }) => {
     // Wait for elements to appear before starting the tour
     const checkElements = setInterval(() => {
       const blogElement = document.querySelector(`[data-tour-element="blog"]`);
+
       if (blogElement) {
         setIsOpen(true);
         clearInterval(checkElements);
