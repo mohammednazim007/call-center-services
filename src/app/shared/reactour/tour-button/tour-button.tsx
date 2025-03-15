@@ -5,7 +5,6 @@ import { MenubarProps } from "../../menu-bar/types";
 
 const TourButton: React.FC<MenubarProps> = ({ toggleMode }) => {
   const { setIsOpen, isOpen } = useTour();
-  console.log(isOpen);
 
   const handleClick = () => {
     if (!isOpen) {
