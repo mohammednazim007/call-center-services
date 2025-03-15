@@ -45,6 +45,7 @@ const ContactUs = () => {
             alt="contact us"
             loading="lazy"
             className="hidden md:block animate-pulse"
+            placeholder="blur"
           />
         </div>
 

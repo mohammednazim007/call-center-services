@@ -20,6 +20,7 @@ const WindowsDownloadButton = () => {
             width={20}
             height={20}
             className=""
+            placeholder="blur"
           />
         </span>
         Download for windows

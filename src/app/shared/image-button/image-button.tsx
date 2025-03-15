@@ -11,6 +11,7 @@ const ImageButton = ({ url }: { url: string }) => {
         src={url}
         alt="image"
         className="w-5 h-5 object-cover"
+        placeholder="blur"
       />
     </div>
   );

@@ -69,6 +69,7 @@ const Header = () => {
             loading="lazy"
             src={brandLogo}
             alt="logo"
+            placeholder="blur"
           />
         </Link>
 

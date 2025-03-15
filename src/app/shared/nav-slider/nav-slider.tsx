@@ -57,6 +57,7 @@ const NavSlider = () => {
             width={1000}
             height={1000}
             loading="lazy"
+            placeholder="blur"
           />
         </div>
         <div>
@@ -66,6 +67,7 @@ const NavSlider = () => {
             width={1000}
             height={1000}
             loading="lazy"
+            placeholder="blur"
           />
         </div>
         <div>
@@ -75,6 +77,7 @@ const NavSlider = () => {
             width={1000}
             height={1000}
             loading="lazy"
+            placeholder="blur"
           />
         </div>
         <div>
@@ -84,6 +87,7 @@ const NavSlider = () => {
             width={1000}
             height={1000}
             loading="lazy"
+            placeholder="blur"
           />
         </div>
         <div>
@@ -93,6 +97,7 @@ const NavSlider = () => {
             width={1000}
             height={1000}
             loading="lazy"
+            placeholder="blur"
           />
         </div>
       </Slider>

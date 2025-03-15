@@ -27,6 +27,7 @@ const HeroPrivateBanner = () => {
               height={1500}
               loading="lazy"
               className="w-full md:w-auto max-w-[700px] h-full object-cover"
+              placeholder="blur"
             />
           </motion.div>
         </AnimatePresence>
@@ -42,6 +43,7 @@ const HeroPrivateBanner = () => {
                 height={50}
                 loading="lazy"
                 className="w-8 md:w-12 h-8 md:h-12"
+                placeholder="blur"
               />
               <span className="text-[#009dff]">Private</span>
             </div>
