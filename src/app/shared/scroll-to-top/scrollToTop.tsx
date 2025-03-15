@@ -25,7 +25,7 @@ const ScrollToTop: React.FC = () => {
       {/* Scroll-To-Top Button */}
       <button
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-        className={`p-3 rounded-full bg-orange-400 text-white shadow-lg transition-opacity relative ${
+        className={`p-3 rounded-full bg-[#FF2DF1] text-white shadow-lg transition-opacity relative ${
           isVisible ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -42,7 +42,7 @@ const ScrollToTop: React.FC = () => {
             cy="25"
             r="22"
             fill="none"
-            stroke="#27667B"
+            stroke="#FFEFC8"
             strokeWidth="6"
             strokeDasharray="138"
             strokeDashoffset={138 - scrollPercent * 1.38}
