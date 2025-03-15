@@ -37,7 +37,6 @@ const Footer = () => {
                 src={brandLogo}
                 loading="lazy"
                 alt="logo"
-                placeholder="blur"
               />
             </div>
 

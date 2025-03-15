@@ -27,7 +27,6 @@ const MarketPlace = () => {
                 height={1500}
                 loading="lazy"
                 className="w-full md:w-auto max-w-[700px] h-full object-cover"
-                placeholder="blur"
               />
             </motion.div>
           </AnimatePresence>
@@ -43,7 +42,6 @@ const MarketPlace = () => {
                   height={50}
                   loading="lazy"
                   className="w-8 md:w-10 h-8 md:h-10"
-                  placeholder="blur"
                 />
 
                 <span className="text-[#009dff]">Marketplace</span>

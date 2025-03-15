@@ -22,7 +22,6 @@ const HeroCallingBanner = () => {
                 height={50}
                 loading="lazy"
                 className="w-8 md:w-12 h-8 md:h-12"
-                placeholder="blur"
               />
               <span>Audio & Video</span>
             </div>
@@ -61,7 +60,6 @@ const HeroCallingBanner = () => {
               height={1000}
               loading="lazy"
               className="w-full md:w-auto md:max-w-[700px] h-auto object-contain"
-              placeholder="blur"
             />
           </motion.div>
         </AnimatePresence>

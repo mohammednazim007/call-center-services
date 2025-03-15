@@ -29,7 +29,6 @@ const DisplayUser: React.FC<{ user: User }> = ({ user }) => {
                 src={user.avatar}
                 alt={`${user.name}'s avatar`}
                 className="object-cover w-10 h-10 mx-4 rounded-full bg-gray-500"
-                placeholder="blur"
               />
               <span className="hover:underline text-gray-600">{user.name}</span>
             </span>

@@ -19,7 +19,6 @@ const ClientChatBanner = () => {
           height={1000}
           loading="lazy"
           className="w-full h-auto "
-          placeholder="blur"
         />
         <h1 className="text-xl text-[#1c1e21] py-8 md:text-5xl md:min-w-1/3 mx-auto text-center">
           With private messaging and calling, you can be yourself, speak freely
@@ -34,7 +33,6 @@ const ClientChatBanner = () => {
           height={1000}
           loading="lazy"
           className="w-full h-auto "
-          placeholder="blur"
         />
       </motion.div>
     </div>
