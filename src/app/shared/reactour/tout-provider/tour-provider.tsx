@@ -28,7 +28,7 @@ const TourController = ({ totalSteps }: { totalSteps: number }) => {
       setTimeout(() => {
         setCurrentStep(0);
         setIsOpen(false);
-      }, 2000); // Close tour 1 second after last step
+      }, 5000); // Close tour 1 second after last step
     }
   }, [currentStep, isOpen, setCurrentStep, setIsOpen, totalSteps]);
 
