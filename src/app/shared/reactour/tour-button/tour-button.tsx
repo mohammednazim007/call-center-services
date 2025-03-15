@@ -4,9 +4,13 @@ import { useTour } from "@reactour/tour";
 import { MenubarProps } from "../../menu-bar/types";
 
 const TourButton: React.FC<MenubarProps> = ({ toggleMode }) => {
-  const { setIsOpen } = useTour();
+  const { setIsOpen, isOpen } = useTour();
+  console.log(isOpen);
 
   const handleClick = () => {
+    if (!isOpen) {
+      toggleMode("closed");
+    }
     toggleMode("menu");
 
     // Wait for elements to appear before starting the tour
