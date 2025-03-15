@@ -45,7 +45,7 @@ const ScrollToTop: React.FC = () => {
             stroke="#FFEFC8"
             strokeWidth="6"
             strokeDasharray="138"
-            strokeDashoffset={138 - scrollPercent * 1.38}
+            strokeDashoffset={`${138 - scrollPercent * 1.38}`}
             strokeLinecap="round"
           />
         </svg>

@@ -19,7 +19,6 @@ const WindowsDownloadButton = () => {
             alt="windows"
             width={20}
             height={20}
-            placeholder="blur"
             loading="lazy"
           />
         </span>
