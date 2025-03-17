@@ -11,7 +11,7 @@ const WindowsDownloadButton = () => {
       transition={{ duration: 1.1, delay: 0.5 }}
     >
       <button
-        className={`${downloadStyle.downloadBtn} flex items-center gap-x-3`}
+        className={`${downloadStyle.downloadBtn} flex items-center gap-x-2 min-w-[15rem]`}
       >
         <span>
           <Image
