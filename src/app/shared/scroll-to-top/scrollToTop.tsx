@@ -3,8 +3,8 @@ import { ArrowUp } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const ScrollToTop: React.FC = () => {
-  const [scrollPercent, setScrollPercent] = useState(0);
-  const [isVisible, setIsVisible] = useState(false);
+  const [scrollPercent, setScrollPercent] = useState<number>(0);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const handleScroll = () => {
