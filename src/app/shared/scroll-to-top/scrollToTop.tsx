@@ -7,6 +7,7 @@ const ScrollToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
+    if (typeof window === "undefined") return;
     const handleScroll = () => {
       const { scrollTop, scrollHeight, clientHeight } =
         document.documentElement;
